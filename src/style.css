@@ -364,7 +364,7 @@ button:focus {
 }
 
 .home-social-icons::before {
-  content: "";
+  content: "|";
   position: absolute;
   top: 0;
   left: 0;
@@ -417,12 +417,23 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-  .footer-copywright {
-    text-align: center !important;
+  .footer-icons {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important; 
+    display: flex !important;
+    justify-content: center;
+    flex-Direction: row !important;
+    
   }
+}
 
-  .footer-body {
-    text-align: center !important;
+@media screen and (min-width: 767px) {
+  .footer-icons {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    display: flex !important;
+    justify-content: center;
+    flex-Direction: row !important;
   }
 }
 
@@ -741,3 +752,5 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+

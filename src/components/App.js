@@ -18,6 +18,8 @@ export default function App() {
   return (
     <div className='App' id={load? "no-scroll" : "scroll"}>
       <NavigationBar />
+      <div style={{height: "70vh"}}></div>
+      
     </div>
   )
 }
